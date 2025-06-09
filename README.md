@@ -32,11 +32,9 @@ public class UseApiKeyAttribute : Attribute, IAsyncActionFilter
 }
 ```
 
-And then adding [UseApiKey] above the controller which you want to use it on. You can create different api keys to use on different controllers.
+And then adding [UseApiKey] above the controller which you want to use it on. You can create different api keys to use on different controllers. 
 
-You have to also add the following in your appsettings.json file.
-
-You have to add the key name and value on azure if deploying there as well.
+You have to also add the following in your appsettings.json file. (Also on azure if deploying there as well)
 
 ```json
 "ApiKeys": {
@@ -45,8 +43,6 @@ You have to add the key name and value on azure if deploying there as well.
 ```
 
 There are other ways of doing this as well which I will look into in the future.
-
-
 
 ## Swagger Documentation:
 
