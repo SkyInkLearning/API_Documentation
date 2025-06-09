@@ -2,7 +2,7 @@
 
 ## API Key:
 
-API keys are added by creating a file named UseApiKeyAttribute and adding the following code:
+The simplest way to add API keys are added by creating files, this one named UseApiKeyAttribute, and adding the following code:
 
 ```csharp
 [AttributeUsage(AttributeTargets.Class | AttributeTargets.Method)]
@@ -36,11 +36,22 @@ And then adding [UseApiKey] above the controller which you want to use it on. Yo
 
 You have to also add the following in your appsettings.json file.
 
+You have to add the key name and value on azure if deploying there as well.
+
 ```json
 "ApiKeys": {
   "StandardApiKey": "PRODUCT-APINYCKEL"
 }
 ```
 
+There are other ways of doing this as well which I will look into in the future.
+
+
+
 ## Swagger Documentation:
+
+
+
+
+
 
